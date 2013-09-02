@@ -1,0 +1,1 @@
+$(document).ready(function() {var showText="Read More...";var hideText="Hide";$(".toggle").next().append(' (<a href="#" class="toggleLink">'+showText+'</a>)');$('.toggle').hide();$('a.toggleLink').click(function() {if ($(this).html()==showText) {$(this).html(hideText);}else {$(this).html(showText);}$(this).parent().prev('.toggle').toggle('slow');return false;});});
